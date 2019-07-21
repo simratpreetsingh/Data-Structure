@@ -1,6 +1,6 @@
 class Graph {
 	int v;//no of vertices
-	list<int> * adj;//adjancey list of synamic array
+	list<int> * adj;//adjancey list of dynamic array
 public:
 	Graph(int v) {
 		this->v = v;
