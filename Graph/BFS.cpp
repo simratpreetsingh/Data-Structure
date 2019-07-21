@@ -1,6 +1,6 @@
 class Graph {
-	int v;
-	list<int> * adj;
+	int v;//no of vertices
+	list<int> * adj;//adjancey list of synamic array
 public:
 	Graph(int v) {
 		this->v = v;
@@ -8,19 +8,14 @@ public:
 	}
 	void BFS(int s);
 	void addEdge(int v, int w);
-	void print();
 };
 
-void Graph::print() {
-	list<int>::iterator it;
-
-	}
 	void Graph:: BFS(int s) {
 		bool * visited = new	bool[v];
 		for (int i = 0; i < v; i++)
 			visited[i] = false;
 
-		list<int> q;
+		list<int> q;//queue to store next elements
 		visited[s] = true;
 		q.push_back(s);
 		cout << s << " ";
