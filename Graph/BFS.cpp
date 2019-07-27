@@ -1,3 +1,10 @@
+#include <iostream>
+#include <iterator>
+#include <vector>
+#include<list>
+#include<stack>
+#include<queue>
+
 class Graph {
 	int v;//no of vertices
 	list<int> * adj;//adjancey list of dynamic array
